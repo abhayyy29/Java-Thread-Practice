@@ -4,8 +4,10 @@ public class ThreadTaskMain {
         System.out.println("Hello");
         System.out.println("Hi");
         Runnable r = new ThreadTask();
-        Thread t = new Thread(r);
-        t.start();
+        Thread t1 = new Thread(r);
+        Thread t2 = new Thread(r);
+        t1.start();
+        t2.start();
         System.out.println("BYe");
         System.out.println("Good");
 
